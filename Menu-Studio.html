@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegación</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #009966;
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .sidebar h2 {
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .menu {
+            list-style: none;
+        }
+
+        .menu li {
+            margin: 10px 0;
+        }
+
+        .menu li a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .menu li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .menu li a i {
+            margin-right: 12px;
+            font-size: 18px;
+        }
+
+        .active {
+            background: rgba(255, 255, 255, 0.3);
+            font-weight: bold;
+        }
+
+        .badge {
+            background: #ff2d55;
+            color: white;
+            font-size: 12px;
+            padding: 3px 6px;
+            border-radius: 4px;
+            margin-left: auto;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>MY CERA</h2>
+        <ul class="menu">
+            <li><a href="https://tusuperset.com/superset/dashboard/home" class="active"><i class="fas fa-th"></i> My Dashboard</a></li>
+            <li><a href="https://tusuperset.com/superset/dashboard/courses"><i class="fas fa-pen"></i> My Courses</a></li>
+            <li><a href="https://tusuperset.com/superset/dashboard/feed"><i class="fas fa-rss"></i> My Feed</a></li>
+            <li><a href="https://tusuperset.com/superset/dashboard/messages"><i class="fas fa-comments"></i> My Messages</a></li>
+            <li><a href="https://tusuperset.com/superset/dashboard/forums"><i class="fas fa-comment-alt"></i> My Forums</a></li>
+            <li><a href="https://tusuperset.com/superset/dashboard/groups"><i class="fas fa-users"></i> My Groups <span class="badge">Ready</span></a></li>
+            <li><a href="https://tusuperset.com/superset/dashboard/connections"><i class="fas fa-heart"></i> My Connections</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
